@@ -38,6 +38,7 @@
         <nav>
           <ul class="nav nav-pills pull-right">
             <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#getstarted">Get Started</a></li>
             <li role="presentation"><a href="https://github.com/tlsarchiver">GitHub</a></li>
           </ul>
         </nav>
@@ -48,6 +49,16 @@
         <h1>The TLS Archiver</h1>
         <p class="lead">More and more X.509 certificates are delivered and generated every month, with its part of weird or mis-issued certificates. Let's archive all of them!</p>
         <p><a class="btn btn-lg btn-success" href="https://github.com/tlsarchiver" role="button">Check out the repository</a></p>
+        <hr>
+        <div class="text-left">
+            <p id="getstarted">To get started, prepare first your environment:</p>
+            <pre>mkdir TLSArchiver &amp;&amp; cd TLSArchiver
+git clone https://github.com/tlsarchiver/infra.git
+cd infra
+docker-compose up</pre>
+            <p>Then, execute the archiver:</p>
+            <pre>docker run --rm -it --link=tlsa-db --network=infra_default -e ARCHIVER_DBPASSWORD=kakoo -e ARCHIVER_DBHOST=tlsa-db tlsarchiver/archiver /archiver</pre>
+        </div>
       </div>
 
       <div class="row marketing">
