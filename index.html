@@ -38,49 +38,53 @@
         <nav>
           <ul class="nav nav-pills pull-right">
             <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">About</a></li>
-            <li role="presentation"><a href="#">Contact</a></li>
+            <li role="presentation"><a href="https://github.com/tlsarchiver">GitHub</a></li>
           </ul>
         </nav>
         <h3 class="text-muted">The TLS Archiver Project</h3>
       </div>
 
       <div class="jumbotron">
-        <h1>The TLS Archiver Project</h1>
-        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <h1>The TLS Archiver</h1>
+        <p class="lead">More and more X.509 certificates are delivered and generated every month, with its part of weird or mis-issued certificates. Let's archive all of them!</p>
         <p><a class="btn btn-lg btn-success" href="https://github.com/tlsarchiver" role="button">Check out the repository</a></p>
       </div>
 
       <div class="row marketing">
         <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          <h4>So many certificates</h4>
+          <p>TLS is taking a growing place in the modern internet, be it for protecting HTTP or for other services such as email (SMTP, POP, IMAP). Issuing a certificate has become a usual action for administrators and developers, and the number of certificates has grown drastically. The TLS Archiver Project aims at downloading all the available X.509 certificates available on the internet, and to conduct analysis on them... in the hope to find interesting things ;)</p>
         </div>
 
         <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <h4>State of the project</h4>
+          <p>The project is <strong>under heavy development</strong>, and cannot be considered as stable. Pull Requests are welcome!</p>
 
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          <h4>Goals</h4>
+          <p>The first goal is to <strong>collect as many certificates as possible</strong>, by using a wide panel of sources. The second goal is to process them and conduct detailed analysis on them to discover re-usage, mis-issuance, and other funky (or scary) things, and to produce some nice analytics on the state of the certificate landscape.</p>
         </div>
       </div>
 
       <footer class="footer">
-        <p>&copy; 2016 Company, Inc.</p>
+        <p>&copy; 2016 The TLS Archiver Project.</p>
       </footer>
 
     </div> <!-- /container -->
 
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(["setDomains", ["*.tlsarchiver.github.io"]]);
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u="//piwik.securem.eu/";
+        _paq.push(['setTrackerUrl', u+'pw.php']);
+        _paq.push(['setSiteId', '8']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'pw.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+    <noscript><p><img src="//piwik.securem.eu/pw.php?idsite=8" style="border:0;" alt="" /></p></noscript>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="https://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
